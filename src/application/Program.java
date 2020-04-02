@@ -24,7 +24,7 @@ public class Program {
 			Date checkOut = sdf.parse(sc.next());
 					
 			Reservation reservation = new Reservation(number, checkIn, checkOut);
-			System.out.println("Reservation: "+ reservation.toString());
+			System.out.println("Reservation: "+ reservation); //Chamando toString
 			
 			System.out.println();
 			System.out.println("Enter data to update the reservation:");
@@ -34,7 +34,7 @@ public class Program {
 			checkOut = sdf.parse(sc.next());
 			
 			reservation.updateDate(checkIn, checkOut);
-			System.out.println("Reservation: "+ reservation.toString());
+			System.out.println("Reservation: "+ reservation); //Chamando toString
 		}
 		catch(ParseException e){
 			System.out.println("Invalid data format");
